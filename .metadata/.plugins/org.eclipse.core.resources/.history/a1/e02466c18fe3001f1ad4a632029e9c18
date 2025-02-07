@@ -1,0 +1,11 @@
+package generic;
+
+public class Gstack<T> {
+	int tos;
+	Object[] stack;
+	
+	public GStack
+
+	}
+
+}

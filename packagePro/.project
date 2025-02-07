@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>packagePro</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>src/packagepro/RankTest.java</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Users/it/Desktop/JavaWork-master%20(1)/JavaWork-master/packagePro/src/Packagepro/RankTest.java</locationURI>
+		</link>
+		<link>
+			<name>src/packagepro/ScoreEx.java</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Users/it/Desktop/JavaWork-master%20(1)/JavaWork-master/packagePro/src/Packagepro/ScoreEx.java</locationURI>
+		</link>
+		<link>
+			<name>src/packagepro/StaticMember.java</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Users/it/Desktop/JavaWork-master%20(1)/JavaWork-master/packagePro/src/Packagepro/StaticMember.java</locationURI>
+		</link>
+	</linkedResources>
+</projectDescription>

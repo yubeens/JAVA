@@ -10,11 +10,75 @@ package task_0205;
 //			이름: 을/ 학번: 100 / 학과: 전자공학 / 학년: 2/ 이수학점: 51 / 조교 유형: 교육 조교 / 장학금 여부: 못받음
 //			이름: 병/ 학번: 102 / 학과: 세포생물 / 학년: 3/ 이수학점: 61 / 조교 유형: 연구 조교/ 장학금 여부: 받음
 
-public class StudentTest {
+class Student{
+	private String name;
+	private int sno;
+	private String department;
+	private int grade;
+	private int credit;
+	
+	public Student(String name, int sno, String department, int grade, int credit) {
+		super();
+		this.name = name;
+		this.sno = sno;
+		this.department = department;
+		this.grade = grade;
+		this.credit = credit;
+	}
+	public void displayInfo() {
+		System.out.print("이름: "+name+" / 학번: "+sno+" / 학과: "+department+" / 학년: "+grade+" / 이수학점: "+credit);
+	}
+	
+}
+class Undergraduate extends Student{ //소속동아리
+	private String club;
+
+	public Undergraduate(String name, int sno, String department, int grade, int credit, String club) {
+		super(name, sno, department, grade, credit);
+		this.club = club;
+	}
+
+	@Override
+	public void displayInfo() {
+		// TODO Auto-generated method stub
+		super.displayInfo();
+		System.out.println(" / 소속 동아리: "+club);
+	}
+}
+
+//test class
+class Graduate extends Student{ //조교 유형과 장학금 비율
+	private String assistantType;
+	private double scholarshipRatio;
+	
+	public Graduate(String name, int sno, String department, int grade, int credit, String assistantType,
+			double scholarshipRatio) {
+		super(name, sno, department, grade, credit);
+		this.assistantType = assistantType;
+		this.scholarshipRatio = scholarshipRatio;
+	}
+
+	@Override
+	public void displayInfo() {
+		// TODO Auto-generated method stub
+		super.displayInfo();
+		System.out.println(" / 조교유형: "+assistantType+" / 장학금 여부: "+(scholarshipRatio > 0 ? "받음" : "못받음")); //true, false
+	}
+}
+
+public class StudentTest { 
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		Undergraduate ug1 = new Undergraduate("갑",1000,"컴공",3,84,"날자날어");
+		Undergraduate ug2 = new Undergraduate("갑",1000,"컴공",3,87,"돌고돌아");
+		Graduate grad1 = new Graduate("을",100,"전자공학",2,51,"교육조교",0);
+		Graduate grad2 = new Graduate("병",102,"세포생물",3,61,"연구조교",1);
+		
+		ug1.displayInfo();
+		ug2.displayInfo();
+		grad1.displayInfo();
+		grad2.displayInfo();
 	}
 
 }

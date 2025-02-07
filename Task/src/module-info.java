@@ -4,5 +4,6 @@
 /**
  * 
  */
-module Task {
+module Task01 {
+	requires java.desktop;
 }

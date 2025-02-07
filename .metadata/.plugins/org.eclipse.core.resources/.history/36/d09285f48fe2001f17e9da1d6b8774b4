@@ -1,0 +1,21 @@
+package StringPro;
+
+public class StringEx01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s1="abcd";
+		String s2="java";
+		String s3="abcd";
+		String s4=new String("abcd");
+		String s5=new String("java");
+		String s6=new String("java");
+		char[] ch= {'a','b','c','d'};
+		String s7=new String(ch);
+		System.out.println(s1==s3);
+		System.out.println(s1.equals(s3));
+		System.out.println(s1==s4);
+		System.out.println(s1.equals(s4));
+	}
+
+}

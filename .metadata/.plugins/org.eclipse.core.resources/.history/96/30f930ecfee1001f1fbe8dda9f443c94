@@ -1,0 +1,13 @@
+package test01;
+
+public class WrapperEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Integer i = Integer.valueOf(10);
+		System.out.println(i);
+		int ii=10;
+		System.out.println(ii);
+	}
+
+}

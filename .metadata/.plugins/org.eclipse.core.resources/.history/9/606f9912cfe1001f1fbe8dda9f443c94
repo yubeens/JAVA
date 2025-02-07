@@ -1,0 +1,19 @@
+package task_0203;
+
+class Television {
+private String model;
+void setModel(String b) { // 설정자
+model = b;
+}
+void getModel() { // 접근자
+return model;
+}
+}
+public class TelevisionTest {
+public static void main(String[] args){
+Television t = new Television;
+t.setModel("STV-101");
+String b = getModel();
+	}
+
+}

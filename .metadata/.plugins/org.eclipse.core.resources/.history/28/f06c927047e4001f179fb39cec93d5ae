@@ -1,0 +1,19 @@
+package task_0204;
+//p.284 bonus3번문제
+//문자열을 입력받고 String클래스를 이용하여 <Enter>키를 입력할 때마다 한 글자씩 회전시켜 출력하는 프로그램을 작성
+//q를 입력하면 종료!
+
+//문자열을 입력하세요. 빈 칸이 있어도 되고 영어 한글 모두 됩니다.
+//>>떡볶기, 라면, 냉면, 만두, 곱창 다 먹고싶다
+//<Enter>를 입력하면 문자열이 한 글자씩 회전합니다.
+
+//볶기, 라면, 냉면, 만두, 곱창 다 먹고싶다.떡 >>
+
+public class StringRotateOnEnter {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

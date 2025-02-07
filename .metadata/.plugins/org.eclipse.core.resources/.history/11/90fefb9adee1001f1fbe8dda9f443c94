@@ -1,0 +1,15 @@
+package interfacepackage;
+
+public class InterfaceEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//PhoneInterface p1 = new PhoneInterface();
+		System.out.println(PhoneInterface.timeout);
+		SamsungPhone sp = new SamsungPhone();
+		sp.printLog();
+		sp.sendCall();
+		sp.receiveCall();
+		sp.flash();
+	}
+}

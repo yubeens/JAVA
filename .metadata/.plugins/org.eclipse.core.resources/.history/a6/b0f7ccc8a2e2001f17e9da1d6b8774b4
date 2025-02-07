@@ -1,0 +1,30 @@
+package stringPro;
+
+import java.util.Scanner;
+import java.util.StringTokenizer;
+
+public class Calculator {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		System.out.println("숫자를 입력하세요 : ");
+		String input = sc.nextLine();
+		
+		StringTokenizer tokenizer = new StringTokenizer(input);
+		int sum=0;
+		
+		while(tokenizer.hasMoreTokens()) {
+			String token = tokenizer.nextToken();
+			try {
+				int number = Integer.parseInt(token);
+				sum += number;
+			}catch (NumberFormatException e) {
+                System.out.println("유효하지 않은 숫자: " + token);
+            }
+        }
+
+        System.out.println("합계: " + sum);
+        sc.close();
+    }
+}
