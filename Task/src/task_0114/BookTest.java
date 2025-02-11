@@ -1,4 +1,4 @@
-package test06;
+package task_0114;
 
 import java.util.Scanner;
 
@@ -40,6 +40,7 @@ public class BookTest {
 					break;
 			}
 			System.out.println("end");
+		
 					
 	}
 

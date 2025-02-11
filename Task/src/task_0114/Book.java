@@ -1,4 +1,4 @@
-package test06;
+package task_0114;
 
 public class Book {
 	String title;
