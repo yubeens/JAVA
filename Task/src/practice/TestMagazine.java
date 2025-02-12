@@ -1,17 +1,13 @@
 package practice;
 
+import practice.Magazine;
 
 class Book{
 	private String title;
 	private int page;
 	private String author;
 
-	public Book(String title, int page, String author) {
-		this.title = title;
-		this.page = page;
-		this.author = author;
-	}
-
+	
 	public String getTitle() {
 		return title;
 	}
@@ -41,10 +37,6 @@ class Book{
 class Magazine extends Book {
 	private String date;
 
-	public Magazine(String title, int page, String author, String date) {
-		super(title, page, author);
-		this.date = date;
-	}
 
 	public String getDate() {
 		return date;
@@ -67,12 +59,28 @@ public class TestMagazine{
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Magazine magazine = new Magazine();
-		magazine.setTitle(");
+		Magazine magazine1 = new Magazine();
+		magazine1.setTitle("잡지A");
+		magazine1.setPage(10);
+		magazine1.setAuthor("기자A");
+		magazine1.setDate("2010년 2월 25일");
+		
+		Magazine magazine2 = new Magazine();;
+		magazine2.setTitle("잡지 B");
+		magazine2.setPage(20);
+		magazine2.setAuthor("기자B");
+		magazine2.setDate("2010년 3월 8일");
+		
+		//각 잡지의 정보를 출력
+		System.out.println(magazine1);
+		System.out.println();
+		System.out.println(magazine2);
 		
 		
 	
-	}
+		}
 
+	}
 }
-}
+
+

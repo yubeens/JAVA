@@ -31,7 +31,7 @@ public class JDBCConnectionEx {
 			String sql="select * from board";
 			
 			//쿼리결과를 보기 위한 ResultSet 생성
-			ResultSet rs = stmt.executeQuery(sql);
+			ResultSet rs = stmt.executeQuery(sql);  
 			
 			//ResultSet 출력
 			while(rs.next()) {
